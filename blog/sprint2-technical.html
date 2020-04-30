@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stories and Legends (PAGE title) </title>
+    <meta charset="UTF-8">
+    <link href="styles/main.css" rel="stylesheet" type="text/css">
+  </head>
+  
+  <body>
+    <h1>What are the Differences Between Relative, Absolute, and Fixed Positioning?</h1>
+    
+    <p>
+        Relative, absolute and fixed are values of the position property in CSS. This property is used to position an element on the page. Static and sticky are also possible values of the position property. Static is the default position value any element will have, this means that the position of the element will be just as it occurs in the document flow.
+    </p>
+    <p>   
+        The relative position value allows you to position the element to the right, left, top or  bottom relative to where it would normally occur in the document flow (it’s static position). The relative position actually removes the element from the document flow and any other elements on the page will render as if the relative-positioned element was still in it’s original position. This can cause issues as it means that the relative-positioned element may encroach on other elements (it will overflow them) and this may not be desirable. For this reason, the relative position is not often used to move elements to the right, left, top or bottom as other elements also need to be styled around that element.
+    </p>
+    <p>   
+        The absolute value also removes the element from the document flow but the difference here is that the other elements will render accordingly, as if the element is not there at all. Also when the right, left, top and bottom value is set, the element will be positioned relative to it’s closest parent element that has a position value stated. If none of it’s parent elements have position values stated, the absolute positioning of the element will be relative to the body. So to position an element relative to it’s parent, set it’s position to absolute and set top, bottom, right or left to the desired value and then set the position of it’s parent to relative. This will also work if the parent element has another position value other than relative just as long as it is not static.  
+     </p>
+     <p>
+        With the fixed value, the element is removed from the document flow and it is fixed in a specified position relative to the view displaying on the screen, so the element will always stay in the same place on the screen, even if the page is scrolled. This is often used for navigation bars which appear across the top of a page, so you can scroll the rest of the page but the navigation bar stays at the top. To get this effect you would set the position value of the navbar to fixed and the top value to zero (top: 0;), this would position the navbar 0 pixels from the top. You may have to add a positive z-index value to ensure that the navbar stays in front of any other elements on the page as the page is scrolled.
+     </p>
+     <p>   
+        The sticky value can also be used for this purpose, but this is best used if the navbar is not at the very top of the page when the page is first rendered, and the scrollbar is at the top. With the sticky value, as the user scrolls down, the navbar will move up the page until it reaches the top then it will stay in that position and the rest of the page will keep scrolling just like with fixed. This is because the sticky position is a mix between the fixed and relative positions, the element’s position is relative until it is scrolled into the specified position and it is fixed there from that point on. 
+     </p>   
+        This information was collected from the following resources:
+        https://www.w3schools.com/css/css_positioning.asp
+        https://www.freecodecamp.org/news/z-index-explained-how-to-stack-elements-using-css-7c5aa0f179b3/
+        https://www.youtube.com/watch?v=jx5jmI0UlXU&t=335s
+        </p>   
+  </body>
+</html>
