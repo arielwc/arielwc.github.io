@@ -1,0 +1,9 @@
+.functionPic {
+    height: 100px;
+    width: 100px;
+    background-image: url(accioBroom.png);
+}
+
+ul {
+    list-style-type: none;
+}
