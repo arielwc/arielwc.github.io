@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sprint 2 Cultural Blog Post</title>
+    <meta charset="UTF-8">
+    <link href="main.css" rel="stylesheet" type="text/css">
+  </head>
+  
+  <body>
+        <h3>Been Stuck on a Problem</h3>
+        <p>
+            Basically I was making a student gradebook, I had a list of names and a list of numbers. The numbers list was in rows of four, so one row for each student, each containing four numbers which were test scores, so each student had done four tests and the list listed the four test scores for each student.
+            I made the blank gradebook and put the names in, that was fine. But I needed to put the numbers in and have the correct row of test scores align with the correct name.
+            I got stuck on this for a while.
+            I thought initially that I could use the same or a similar method to what I used to put the names in as the list of names and list of numbers were in the correct order. For example, the first row on the list of test scores was for Student One on the name list.
+            
+            <!-- This still left the testScores properties as undefined. I think this is because within the loop scores[y] is not defined? as the loop only interates over the one array? 
+            
+            I had found that (from looking at the tests) if I enter each students score separately like this:
+            
+              gradebook.Wiremu.testScores = scores[2]
+            
+            Then this adds the testScores correctly, so I knew what I wanted to do to each element in the array. I kept working with the for..of loop, I had gotten it to work for the previous step adding the properties to the gradebook object.
+            
+            for (x of students) {
+              gradebook[x] = {}
+            }
+            
+            I thought it might work to to do it in two steps, first adding testScores as an empty array:
+            
+            for (x of students){  
+              gradebook[x].testScores = []
+            }
+            
+            This worked but when I tried to iterate over the scores array and populate those scores into the testScores array, like this;
+            
+            for (y of scores){  
+              gradebook[students[y]].testScores = scores[y]
+            }
+             
+            I kept getting an error saying that I can't set the property 'testScores' of undefined. Again I think that is because within this loop, the students[x] is not defined. 
+            
+            I kept googling and found a similar problem where someone had used a normal for loop and this worked. So I tried iterating over the students array like this:
+            
+            for (var x = 0; x < students.length; x++) {  
+              gradebook[students[x]].testScores = scores[x]
+            
+            So I tried this and it finally worked!
+             -->
+            
+        </p>
+        <h3>Solved a Problem in an Elegant Way</h3>
+        <p>
+
+        </p>
+        <h3>Reflection On Confidence Regarding:</h3>
+        <h5>Psuedocode: 8/10</h5>           
+        <p>
+            Fine, sometimes it just turns into actual code or at least code with the wrong syntax, so I guess that’s helpful?
+        </p>
+        <h5>Trying Something: 8/10</h5> 
+        <p>
+            Got to do it at some point. It can be quite frustrating when I keep trying things and nothing works. But it’s all learning.
+        </p>
+        <h5>Rubber Ducky: 7/10</h5>
+        <p>
+            I feel kind of silly doing this out loud so I just do it in my head, but is that just thinking? Does that defeat the purpose?
+        </p>        
+        <h5>Reading Error Messages: 8/10</h5>
+        <p>
+            Definitely very helpful, especially when the error message pin-points whereabouts in the code the error has occurred.
+        </p>
+        <h5>Console.logging: 9/10</h5>
+        <p>
+            Really useful to see what is going on with a variable, I can’t always keep it straight in my mind what variable is what at a particular point in my code so I like to be able to console log it to check.
+        </p>
+        <h5>Googling: 9/10</h5>
+        <p>
+            Been doing a lot of this. Easy to go down rabbit-holes, best used in conjunction with timeboxing.
+        </p>
+        <h5>Asking Peers for Help: 4/10</h5>
+        <p>
+            I haven’t done this yet, I have managed to solve any problems I have had in other ways. Also being a person of the rather shy variety this is not a go-to method for me. In person, during the bootcamp, this may be easier.
+        </p>
+        <h5>Asking Coaches for Help: 6/10</h5>
+        <p>
+            I haven’t done this yet either, I have managed to solve any issues by myself. I know this would be ok, I would rather exhaust other more solitary options first. Again in person, this will likely be different.
+        </p>
+        <h5>Improving Process with Reflection: 7/10</h5>
+        <p>
+            I think reflection definitely helps me to improve my process and is important that I do this regularly. Sometimes with reflection (I have found this with personal journaling as well as learning based reflection) I can get a bit stumped as to where or how to start and I get a bit intimidated by the blank page. Having prompts definitely helps with this.
+        </p>
+  </body>
+</html>
